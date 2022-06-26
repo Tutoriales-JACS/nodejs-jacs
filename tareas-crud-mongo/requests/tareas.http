@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api/tareas
+###
+GET http://localhost:3000/api/tareas?page=0&size=1&titulo=comer0
+###
+GET http://localhost:3000/api/tareas?titulo=nueva
+###
+GET http://localhost:3000/api/tareas/completa
+###
+GET http://localhost:3000/api/tareas/incompleta
+###
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+    "titulo":"app angular",
+    "descripcion": "backend og"
+}
+###
+PUT   http://localhost:3000/api/tareas/62b783fe87e372a8628b07ad
+Content-Type: application/json
+
+{
+    "disponible": true
+}
+
+###
+DELETE http://localhost:3000/api/tareas/62b76eadae14ed77f1d5041f
